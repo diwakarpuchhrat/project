@@ -15,62 +15,62 @@ function App() {
   const [selectedNewsImage, setSelectedNewsImage] = useState<null | { image: string; title: string; subtext: string }>(null);
   const clientImages = [
     {
-      image: '/our-clients/Slide1.JPG',
+      image: '/public/our-clients/Slide1.JPG',
       title: 'Client 1',
       subtext: 'A leading multinational corporation that partnered for leadership transformation.'
     },
     {
-      image: '/our-clients/Slide1 (1).JPG',
+      image: '/public/our-clients/Slide1 (1).JPG',
       title: 'Client 2',
       subtext: 'A renowned educational institution recognized for academic excellence.'
     },
     {
-      image: '/our-clients/Slide1 (2).JPG',
+      image: '/public/our-clients/Slide1 (2).JPG',
       title: 'Client 3',
       subtext: 'A fast-growing tech startup that scaled with our training solutions.'
     },
     {
-      image: '/our-clients/Slide1 (3).JPG',
+      image: '/public/our-clients/Slide1 (3).JPG',
       title: 'Client 4',
       subtext: 'A government agency that improved communication and teamwork.'
     },
     {
-      image: '/our-clients/Slide1 (4).JPG',
+      image: '/public/our-clients/Slide1 (4).JPG',
       title: 'Client 5',
       subtext: 'A healthcare provider that enhanced patient care through leadership.'
     },
     {
-      image: '/our-clients/Slide1 (5).JPG',
+      image: '/public/our-clients/Slide1 (5).JPG',
       title: 'Client 6',
       subtext: 'A financial services firm that achieved record growth.'
     },
     {
-      image: '/our-clients/Slide1 (6).JPG',
+      image: '/public/our-clients/Slide1 (6).JPG',
       title: 'Client 7',
       subtext: 'A manufacturing company that optimized operations with our programs.'
     },
     {
-      image: '/our-clients/Slide1 (7).JPG',
+      image: '/public/our-clients/Slide1 (7).JPG',
       title: 'Client 8',
       subtext: 'A non-profit organization that expanded its social impact.'
     },
     {
-      image: '/our-clients/Slide1 (8).JPG',
+      image: '/public/our-clients/Slide1 (8).JPG',
       title: 'Client 9',
       subtext: 'A logistics company that improved efficiency and morale.'
     },
     {
-      image: '/our-clients/Slide1 (9).JPG',
+      image: '/public/our-clients/Slide1 (9).JPG',
       title: 'Client 10',
       subtext: 'A retail chain that boosted customer satisfaction.'
     },
     {
-      image: '/our-clients/Slide1 (10).JPG',
+      image: '/public/our-clients/Slide1 (10).JPG',
       title: 'Client 11',
       subtext: 'A consulting firm that delivered better results for its clients.'
     },
     {
-      image: '/our-clients/Slide1 (11).JPG',
+      image: '/public/our-clients/Slide1 (11).JPG',
       title: 'Client 12',
       subtext: 'A public sector unit that fostered innovation and leadership.'
     },
@@ -90,27 +90,27 @@ function App() {
   // Move newsImages array to the top-level of App so it can be used in the switch without a block
   const newsImages = [
     {
-      image: '/in-the-news/Slide2.JPG',
+      image: '/public/in-the-news/Slide2.JPG',
       title: 'Workshop on Interpersonal Skills',
       subtext: 'Lucky Puchhrat was featured in a leading industry magazine for his innovative approach to leadership and communication.'
     },
     {
-      image: '/in-the-news/Slide3.JPG',
+      image: '/public/in-the-news/Slide3.JPG',
       title: 'Teacher\'s Bootcamp spurs excellence',
       subtext: 'Awarded for outstanding leadership training and motivational speaking at a national conference.'
     },
     {
-      image: '/in-the-news/Slide4.JPG',
+      image: '/public/in-the-news/Slide4.JPG',
       title: 'Meet organised on protecting children from sexual offences',
       subtext: 'Keynote address at the Corporate Leadership Summit, inspiring professionals to achieve excellence.'
     },
     {
-      image: '/in-the-news/Slide5.JPG',
+      image: '/public/in-the-news/Slide5.JPG',
       title: 'Masterclass Series for Personality Development',
       subtext: 'Presented breakthrough strategies for business growth at the Global Business Conference.'
     },
     {
-      image: '/in-the-news/Slide7.JPG',
+      image: '/public/in-the-news/Slide7.JPG',
       title: 'Learning the art of putting forth a perspective',
       subtext: 'Panelist at the Innovation & Strategy Summit, sharing insights on future-ready organizations.'
     }
@@ -285,13 +285,13 @@ function App() {
                   <div 
                     className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
                     onClick={() => setSelectedImage({
-                      src: "/lpac-photos/Screenshot 2025-06-12 004352.png",
+                      src: "/public/lpac-photos/Screenshot 2025-06-12 004352.png",
                       title: "Professional Communication",
                       description: "Master the art of effective business communication with our comprehensive training program. Learn to express your ideas clearly, engage your audience, and achieve your communication goals."
                     })}
                   >
                     <img
-                      src="/lpac-photos/Screenshot 2025-06-12 004352.png"
+                      src="/public/lpac-photos/Screenshot 2025-06-12 004352.png"
                       alt="Communication Training"
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -306,13 +306,13 @@ function App() {
                   <div 
                     className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
                     onClick={() => setSelectedImage({
-                      src: "/lpac-photos/Screenshot 2025-06-12 004425.png",
+                      src: "/public/lpac-photos/Screenshot 2025-06-12 004425.png",
                       title: "Public Speaking",
                       description: "Develop confidence and expertise in public speaking. Our program helps you overcome stage fright, structure compelling presentations, and deliver impactful speeches that resonate with your audience."
                     })}
                   >
                     <img
-                      src="/lpac-photos/Screenshot 2025-06-12 004425.png"
+                      src="/public/lpac-photos/Screenshot 2025-06-12 004425.png"
                       alt="Public Speaking"
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -327,13 +327,13 @@ function App() {
                   <div 
                     className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
                     onClick={() => setSelectedImage({
-                      src: "/lpac-photos/Screenshot 2025-06-12 004450.png",
+                      src: "/public/lpac-photos/Screenshot 2025-06-12 004450.png",
                       title: "Interpersonal Skills",
                       description: "Enhance your ability to connect with others through effective interpersonal communication. Learn to build strong relationships, resolve conflicts, and create positive interactions in both personal and professional settings."
                     })}
                   >
                     <img
-                      src="/lpac-photos/Screenshot 2025-06-12 004450.png"
+                      src="/public/lpac-photos/Screenshot 2025-06-12 004450.png"
                       alt="Interpersonal Skills"
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -388,73 +388,73 @@ function App() {
         // Real video data from screenshot, now with unique URLs
         const youtubeVideos = [
           {
-            thumbnail: '/youtube-thumbnails/yt1.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt1.jpg',
             title: 'एक छोटा शब्द, बड़ी पर्सनैलिटी!',
             duration: '4:10',
             url: 'https://youtu.be/CmMCB_t2vkI?si=wkI7ACPe3sBIauOM',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt2.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt2.jpg',
             title: 'PS 54 2024 से सीखे गए सबक',
             duration: '20:00',
             url: 'https://www.youtube.com/watch?v=ygpwq_XdWkA',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt3.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt3.jpg',
             title: 'My Interaction with the students',
             duration: '4:30',
             url: 'https://www.youtube.com/watch?v=Q-ZB5q7ncCY&t=6s',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt4.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt4.jpg',
             title: 'How to achieve abundance and prosperity?',
             duration: '31:58',
             url: 'https://www.youtube.com/watch?v=w6zmKPd182s',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt5.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt5.jpg',
             title: 'Boost your sales by 30% with 03 essential questions.mp4',
             duration: '12:21',
             url: 'https://www.youtube.com/watch?v=pBhzpoSh5bw',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt6.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt6.jpg',
             title: 'How to achieve clarity in everything ?',
             duration: '24:40',
             url: 'https://www.youtube.com/watch?v=gOPiV5zW8oc',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt7.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt7.jpg',
             title: 'अच्छे लोगों के ही साथ बुरा क्यों होता है!',
             duration: '21:01',
             url: 'https://www.youtube.com/watch?v=FwK5GLkJf5g',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt8.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt8.jpg',
             title: 'Power Statement 48 The Power of Proactivity',
             duration: '13:38',
             url: 'https://www.youtube.com/watch?v=jYJH4cIOgQw&pp=0gcJCckJAYcqIYzv',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt9.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt9.jpg',
             title: 'कोशिश करने वालों की कभी हार नहीं होती!',
             duration: '9:46',
             url: 'https://www.youtube.com/watch?v=xFfXcAindPg',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt10.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt10.jpg',
             title: 'Power Statement – 46',
             duration: '13:29',
             url: 'https://www.youtube.com/watch?v=xFfXcAindPg',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt11.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt11.jpg',
             title: 'Right is right even if no one is doing it...',
             duration: '9:55',
             url: 'https://www.youtube.com/watch?v=6n_WJXfiy3k',
           },
           {
-            thumbnail: '/youtube-thumbnails/yt12.jpg',
+            thumbnail: '/public/youtube-thumbnails/yt12.jpg',
             title: "POWER STATEMENT -44: There's always an opportunity in CHAOS.",
             duration: '7:29',
             url: 'https://www.youtube.com/watch?v=4OnCYtvc4vk',
