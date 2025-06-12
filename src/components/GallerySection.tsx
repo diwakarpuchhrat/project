@@ -3,58 +3,92 @@ import { Play, ExternalLink, X } from 'lucide-react';
 
 const photos = [
   {
-    url: "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Corporate Keynote",
-    subtext: "Lucky inspiring leaders at a major corporate event."
+    url: "/gallery-photos/WhatsApp Image 2025-06-12 at 04.23.56_89176f50.jpg",
+    title: "Stress Management Workshop",
+    subtext: "For Educators."
   },
   {
-    url: "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Leadership Workshop",
-    subtext: "Interactive workshop on modern leadership skills."
+    url: "/gallery-photos/award.jpg",
+    title: "Chief Guest at one of the Schools",
+    subtext: "Recognition for outstanding leadership and contribution."
   },
   {
-    url: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "National Conference",
-    subtext: "Keynote at a national conference for professionals."
+    url: "/gallery-photos/WhatsApp Image 2025-06-12 at 04.22.00_300a36d2.jpg",
+    title: "Parents' Workshop",
+    subtext: "Interactive workshop engaging parents in skill development."
   },
   {
-    url: "https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Training Session",
-    subtext: "Hands-on training session for organizational growth."
+    url: "/gallery-photos/WhatsApp Image 2025-06-12 at 04.20.01_fee2e055.jpg",
+    title: "Teachers' Workshop",
+    subtext: "Comprehensive training session for Teachers."
   },
   {
-    url: "https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Panel Discussion",
-    subtext: "Panel discussion with industry thought leaders."
+    url: "/gallery-photos/WhatsApp Image 2025-06-12 at 04.27.06_a8da01e8.jpg",
+    title: "Teachers' Workshop",
+    subtext: "Comprehensive training session for Teachers."
   },
   {
-    url: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Awards Ceremony",
-    subtext: "Receiving recognition for outstanding leadership."
+    url: "/gallery-photos/WhatsApp Image 2025-06-12 at 04.27.05_0ca8cd0a.jpg",
+    title: "Penning Autographs",
+    subtext: ""
+  },
+  {
+    url: "/gallery-photos/1.jpg",
+    title: "Teachers' Workshop",
+    subtext: "Comprehensive training session for Teachers."
+  },
+  {
+    url: "/gallery-photos/2.jpg",
+    title: "Parents' Workshop",
+    subtext: "Comprehensive training session for Parents and Students."
+  },
+  {
+    url: "/gallery-photos/3.jpg",
+    title: "Chief guest at one of the Schools",
+    subtext: "Recognition for outstanding leadership and contribution."
+  },
+  {
+    url: "/gallery-photos/4.jpg",
+    title: "Teachers' Workshop ",
+    subtext: "On the topic adapting to individual Learning Styles."
+  },
+  {
+    url: "/gallery-photos/5.jpg",
+    title: "Teachers' Workshop ",
+    subtext: "Comprehensive training session for Teachers."
+  },
+  {
+    url: "/gallery-photos/6.jpg",
+    title: "Students' Workshop ",
+    subtext: "Interactive training session for Teachers."
   }
 ];
 
 const videos = [
   {
-    thumbnail: "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Leadership Excellence Keynote",
-    duration: "15:30"
+    thumbnail: "/gallery-photos/WhatsApp Image 2025-06-12 at 04.22.00_300a36d2.jpg",
+    title: "Score Smart, Stress Less",
+    duration: "1:03",
+    url: "/gallery-videos/WhatsApp Video 2025-06-12 at 04.22.00_e557d62a.mp4"
   },
   {
-    thumbnail: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Sales Transformation Workshop",
-    duration: "22:15"
+    thumbnail: "/gallery-photos/WhatsApp Image 2025-06-12 at 04.23.56_89176f50.jpg",
+    title: "Communication Psychology for Educators",
+    duration: "1:03",
+    url: "/gallery-videos/WhatsApp Video 2025-06-12 at 04.23.58_39849ace.mp4"
   },
   {
-    thumbnail: "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Innovation & Change Management",
-    duration: "18:45"
+    thumbnail: "/gallery-photos/WhatsApp Image 2025-06-12 at 04.27.06_a8da01e8.jpg",
+    title: "Responsible use of Mobile Phones for Students",
+    duration: "0:59",
+    url: "/gallery-videos/WhatsApp Video 2025-06-12 at 04.27.08_ce7b6c5b.mp4"
   }
 ];
 
 const GallerySection: React.FC = () => {
   const [activeTab, setActiveTab] = useState('photos');
   const [selectedPhoto, setSelectedPhoto] = useState<null | typeof photos[0]>(null);
+  const [selectedVideo, setSelectedVideo] = useState<null | typeof videos[0]>(null);
 
   const PhotoModal = () => {
     if (!selectedPhoto) return null;
@@ -79,6 +113,36 @@ const GallerySection: React.FC = () => {
             <div className="p-6">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{selectedPhoto.title}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-base">{selectedPhoto.subtext}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const VideoModal = () => {
+    if (!selectedVideo) return null;
+    return (
+      <div className="fixed inset-0 z-[9999] flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={() => setSelectedVideo(null)} />
+        <div className="relative z-50 max-w-4xl w-full mx-4">
+          <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-2xl">
+            <div className="relative">
+              <video
+                src={selectedVideo.url}
+                controls
+                className="w-full h-auto max-h-[70vh]"
+                autoPlay
+              />
+              <button
+                onClick={() => setSelectedVideo(null)}
+                className="absolute top-4 right-4 bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg transition-colors"
+              >
+                <X size={24} />
+              </button>
+            </div>
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{selectedVideo.title}</h3>
             </div>
           </div>
         </div>
@@ -150,8 +214,9 @@ const GallerySection: React.FC = () => {
             {videos.map((video, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp"
+                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
+                onClick={() => setSelectedVideo(video)}
               >
                 <div className="relative">
                   <img
@@ -160,7 +225,7 @@ const GallerySection: React.FC = () => {
                     className="w-full h-48 object-cover"
                   />
                   <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
-                    <Play className="text-white bg-blue-600 dark:bg-yellow-400 rounded-full p-3 hover:bg-blue-700 dark:hover:bg-yellow-300 transition-colors cursor-pointer" size={48} />
+                    <Play className="text-white bg-blue-600 dark:bg-yellow-400 rounded-full p-3 hover:bg-blue-700 dark:hover:bg-yellow-300 transition-colors" size={48} />
                   </div>
                   <div className="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-sm">
                     {video.duration}
@@ -168,15 +233,13 @@ const GallerySection: React.FC = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{video.title}</h3>
-                  <button className="text-blue-600 dark:text-yellow-300 hover:text-blue-700 dark:hover:text-yellow-400 font-medium transition-colors">
-                    Watch Now →
-                  </button>
                 </div>
               </div>
             ))}
           </div>
         )}
         <PhotoModal />
+        <VideoModal />
         <div className="text-center mt-16">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Want to See More?</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-8">Subscribe to our YouTube channel for the latest content</p>

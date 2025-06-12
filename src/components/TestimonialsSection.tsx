@@ -4,23 +4,23 @@ import { Star, Quote } from 'lucide-react';
 const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      position: "CEO, TechCorp",
-      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=300",
+      name: "Delhi Public School, Delhi",
+      position: "",
+      image: "/testimonial-photos/1.png",
       content: "Lucky's keynote transformed our leadership approach. The practical strategies and engaging delivery made it one of our most impactful corporate events.",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      position: "VP Sales, GlobalTech",
-      image: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=300",
+      name: "Greater Valley School, Greater Noida",
+      position: "",
+      image: "/testimonial-photos/2.jpg",
       content: "The sales training program exceeded all expectations. Our team's performance improved by 35% within just three months of implementation.",
       rating: 5
     },
     {
-      name: "Amanda Rodriguez",
-      position: "HR Director, InnovateInc",
-      image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=300",
+      name: "Modern Public School, Haryana",
+      position: "",
+      image: "/testimonial-photos/3.png",
       content: "Exceptional speaker who knows how to connect with diverse audiences. Lucky's leadership insights are both practical and transformative.",
       rating: 5
     }

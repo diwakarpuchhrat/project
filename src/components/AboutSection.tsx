@@ -48,7 +48,7 @@ const AboutSection: React.FC = () => {
             />
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Name of the speaker: Lucky Puchhrat</h3>
-              <p className="mb-2 dark:text-gray-200"><strong>Age:</strong> 43 yrs</p>
+              <p className="mb-2 dark:text-gray-200"><strong>Age:</strong> 47 yrs</p>
               <p className="mb-2 dark:text-gray-200"><strong>Speaking Experience:</strong> 10 yrs as a professional speaker</p>
               <p className="mb-2 dark:text-gray-200"><strong>Speaker's Forte:</strong> Personal Management, Communication Skills, Leadership Skills, Motivation and Sales</p>
               <p className="mb-4 dark:text-gray-200"><strong>Career:</strong> Lucky Puchhrat was born in India in 1976 and was raised in a Brahmin family of traditional Indian values.<br/>
