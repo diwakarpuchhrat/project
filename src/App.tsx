@@ -534,28 +534,28 @@ function App() {
                       <svg className="mr-4" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
                       <div>
                         <div className="font-semibold">Email</div>
-                        <div>lucky@lpacs.com</div>
+                        <div>puchhratlucky@yahoo.com</div>
                       </div>
                     </div>
                     <div className="flex items-center text-blue-700 dark:text-yellow-300">
                       <svg className="mr-4" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
                       <div>
                         <div className="font-semibold">Phone</div>
-                        <div>+1 (555) 123-4567</div>
+                        <div>(+91) 9810664684</div>
                       </div>
                     </div>
                     <div className="flex items-center text-blue-700 dark:text-yellow-300">
                       <svg className="mr-4" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                       <div>
                         <div className="font-semibold">Location</div>
-                        <div>Available Worldwide</div>
+                        <div>Available Pan India</div>
                       </div>
                     </div>
                     <div className="flex items-center text-blue-700 dark:text-yellow-300">
                       <svg className="mr-4" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
                       <div>
                         <div className="font-semibold">Availability</div>
-                        <div>Booking 2024 & 2025</div>
+                        <div>Booking Available</div>
                       </div>
                     </div>
                   </div>
