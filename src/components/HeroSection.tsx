@@ -60,7 +60,7 @@ const HeroSection: React.FC<{ setActiveSection?: (id: string) => void }> = ({ se
       <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-purple-400/30 dark:bg-blue-400/20 rounded-full filter blur-3xl animate-float2 z-0" />
       <div className="relative z-10 w-full max-w-3xl mx-auto text-center py-16">
         <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-6 drop-shadow-lg animate-fadeInUp">
-          Welcome to <span className="text-blue-600 dark:text-yellow-300">Lucky Puchhrat</span>
+          Mavericks India <span className="text-blue-600 dark:text-yellow-300">Solutions</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 mb-8 animate-fadeInUp delay-100">
           Transforming organizations and lives through leadership, communication, and inspiration.

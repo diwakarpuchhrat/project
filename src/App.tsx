@@ -16,63 +16,63 @@ function App() {
   const clientImages = [
     {
       image: '/our-clients/Slide1.JPG',
-      title: 'Client 1',
-      subtext: 'A leading multinational corporation that partnered for leadership transformation.'
+      title: 'Anmol India',
+      subtext: 'Leading Biscuits, Cakes, Cookies manufacturer.'
     },
     {
       image: '/our-clients/Slide1 (1).JPG',
-      title: 'Client 2',
-      subtext: 'A renowned educational institution recognized for academic excellence.'
+      title: 'V-Guard Industries',
+      subtext: 'A renowned consumer electronics company.'
     },
     {
       image: '/our-clients/Slide1 (2).JPG',
-      title: 'Client 3',
-      subtext: 'A fast-growing tech startup that scaled with our training solutions.'
+      title: 'Raja Biscuits',
+      subtext: 'Biscuits, Cakes, Cookies manufacturer.'
     },
     {
       image: '/our-clients/Slide1 (3).JPG',
-      title: 'Client 4',
-      subtext: 'A government agency that improved communication and teamwork.'
+      title: '1-India Family Mart',
+      subtext: 'Pan India Garments Retailer.'
     },
     {
       image: '/our-clients/Slide1 (4).JPG',
-      title: 'Client 5',
-      subtext: 'A healthcare provider that enhanced patient care through leadership.'
+      title: 'Mahagun India',
+      subtext: 'Leading Builders and developers in Noida, Greater Noida and Ghaziabad.'
     },
     {
       image: '/our-clients/Slide1 (5).JPG',
-      title: 'Client 6',
-      subtext: 'A financial services firm that achieved record growth.'
+      title: 'Zee News',
+      subtext: 'Indian Hindi-Language right-wing News channel.'
     },
     {
       image: '/our-clients/Slide1 (6).JPG',
-      title: 'Client 7',
-      subtext: 'A manufacturing company that optimized operations with our programs.'
+      title: 'Mann Travels',
+      subtext: 'A Leading Travel and Tourism agency in Delhi.'
     },
     {
       image: '/our-clients/Slide1 (7).JPG',
-      title: 'Client 8',
-      subtext: 'A non-profit organization that expanded its social impact.'
+      title: 'Makino',
+      subtext: 'Leading OEM and aftermarket parts Producer Worldwide.'
     },
     {
       image: '/our-clients/Slide1 (8).JPG',
-      title: 'Client 9',
-      subtext: 'A logistics company that improved efficiency and morale.'
+      title: 'Fireball Securitas',
+      subtext: 'India\'s Leading Personal Security Provider.'
     },
     {
       image: '/our-clients/Slide1 (9).JPG',
-      title: 'Client 10',
-      subtext: 'A retail chain that boosted customer satisfaction.'
+      title: 'Vinod Intelligent Cookware',
+      subtext: 'India\'s best Kitchenware products brand.'
     },
     {
       image: '/our-clients/Slide1 (10).JPG',
-      title: 'Client 11',
-      subtext: 'A consulting firm that delivered better results for its clients.'
+      title: 'Hindustan Times',
+      subtext: 'An Indian English-language daily newspaper based in Delhi.'
     },
     {
       image: '/our-clients/Slide1 (11).JPG',
-      title: 'Client 12',
-      subtext: 'A public sector unit that fostered innovation and leadership.'
+      title: 'TradeIndia',
+      subtext: 'India\'s largest B2B marketplace for small businesses based in India.'
     },
   ];
   const [selectedClient, setSelectedClient] = useState<null | { image: string; title: string; subtext: string }>(null);
