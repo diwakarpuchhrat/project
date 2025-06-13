@@ -41,7 +41,7 @@ const AboutSection: React.FC = () => {
         <div className="mb-20">
           <div className="flex flex-col lg:flex-row items-start">
             <img
-              src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/about/1.jpg"
               alt="Lucky Puchhrat Portrait"
               className="rounded-2xl shadow-xl w-full max-w-xs mb-6 lg:mb-0 lg:mr-10 float-left"
               style={{ flexShrink: 0 }}
